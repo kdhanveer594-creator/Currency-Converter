@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="ammount_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <div class="logo">CurrencyEx 🪙💰</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Live Updates</a></li>
+            <select class="contact">Contact
+                <option value="Contact">Contact📞</option>
+                <option value="Contact">Ph: 7906075981</option>
+                <option value="Contact">Ph: 8650679131</option>
+                <li>
+                    <hr class="hr">
+                </li>
+                <option value="Contact">Ph: Email: kdhanveer@gmail.com</option>
+            </select>
+
+    </nav>
+    <div class="form">
+        <h2 class="title"><u>Currency Converter</u></h2>
+
+        <div class="ammount">
+            <p>Enter Ammount to convert:</p>
+            <input type="text" value="1">
+        </div>
+
+        <div class="dropdown">
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                    <select name="from"></select>
+                </div>
+            </div>
+
+            <!-- <span class="exchange-icon">⇆</span> -->
+            <i class="fa-solid fa-arrow-right-arrow-left swap-btn"></i>
+
+            <div class="to">
+                <p>To</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                    <select name="to"> </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="convert-btn">Convert</button>
+            <button class="reset-btn">Reset: ↺</button>
+        </div>
+
+        <div class="msg">Converted ammount:</div>
+        <div class="time">
+            <i class="fa-regular fa-calendar-days" style="margin-top: 2rem; margin-right:1rem; font: waight 500px;"></i>
+            <i class="fa-regular fa-alarm-clock" style="margin-top: 2rem; margin-right:1rem; font: waight 500px;"></i>
+            <div class="timestamp"></div>
+        </div>
+    </div>
+
+    <script src="ammount_code.js"></script>
+    <script src="ammount_script.js"></script>
+</body>
+
+</html>
